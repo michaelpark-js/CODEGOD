@@ -12,13 +12,15 @@
     <!-- The form element represents a document section containing interactive controls for submitting information. -->
     <!-- The form element is a shell, with no visual impact. -->
 
-    <form action="/pig">
+    <form action="/pig/">
         <!-- The action attribute specifies WHERE the form data should be sent. -->
         <!-- The method attribute specifies which HTTP method should be used -->
-        <input type="text" placeholder="Username">
+        <input type="text" placeholder="Username" name="username">
         <!-- The input element is used to create a variety of different form controls. -->
         <!-- 20+ possible types of inputs, ranging from date pickers to checkboxes. -->
         <!-- The type attribute dramatically alters the input's type and appearance. -->
+        <!-- The name attribute kind of labels the form data sent. Gives the data sent a name.-->
+
         <input type="password" placeholder="Password">
 
         <input type="color">
@@ -38,6 +40,44 @@
 
             <button>Submit</button>
         </div>
+
+
+    </form>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+
+
+    <nav><a href="first.html">Go Home</a></nav>
+
+
+
+    <textarea name="sug" id="suggestions" cols="30" rows="10" placeholder="Type something here.">
+        <!-- Textarea element is similar to input, but not the same. -->
+    </textarea>
+
+    <div>
+        <label for="shit">How many times do pigs poop in a day?</label>
+        <select name="poo" id="shit">
+            <option value="wrong">0</option>
+            <option value="correct">1</option>
+            <option value="wrong">2</option>
+            <option value="wrong">3</option>
+            <option value="wrong">4</option>
+            <button>Guess</button>
+        </select>
+    </div>
+    <!-- form validation -->
+
+    <form action="/dummy">
+        <label for="first">Enter First Name Here</label>
+        <input type="text" name="first" id="first" required>
+
+        <p>
+            <label for="user2">Username</label>
+            <input type="text" id="user2" minlength="5" maxlength="20" required>
+        </p>
     </form>
 </body>
 

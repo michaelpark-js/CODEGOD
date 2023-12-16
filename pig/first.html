@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <title>Pig - Michaelpedia</title>
+    <link rel="stylesheet" href="swag.css">
+    <!-- Use "link" to connect with CSS sheet. 
+    
+        **Can also use styles attribute <h1 style="color: purple"?</h1>
+            INLINE STYLES ALWAYS BAD THO, DONT USE
+            OR <style> CSS </style>
+    -->
 </head>
 
 <body>
@@ -13,48 +20,39 @@
 
 
         <h1>
-
-            <nav>
-                <a href="https://entitycode.com">&clubs;PIG&hearts;</a>
-                <!-- HTML Character Entities
+            <a href="https://entitycode.com">&clubs;PIG&hearts;</a>
+            <!-- HTML Character Entities
     A "string" that begins with an ampersand & and ends with a semicolon :.
     Used to display RESERVE character (which would otherwise be interpreted as HTML code), and invisible characters (like non-breaking spaces).-->
-                <a href="emmetdemo.html">Emmet Demo</a>
+        </h1><!-- h1, h2, h3, etc... All the heading elements are "block elements" -->
 
-                <nav>
-                    <a href="pigbreeds.html">
-                        Pig Breeds</a>
-                    <a href="formsdemo.html">Forms</a>
-                </nav>
-
-            </nav>
-        </h1>
-
-
-        <!-- h1, h2, h3, etc... All the heading elements are "block elements" -->
+        <a id="homepage" href="file:///Users/michaelpark/Documents/CODEGOD/index.html">TO HOMEPAGE</a>
 
         <hr> <!-- Horizontal Rule = hr to create a THEMATIC BREAK. -->
 
         <div>
             <!-- You can also use the div element <div> to FORCE a block element! Useful with CSS later... 
-           Think of it like a container. 
-        -->
-            <!-- "a" is anchor tag. Use it to create links. -->
-            <a href="http://www.google.com">I am a link.</a>
-            <a href="second.html">About the Author</a>
+           Think of it like a container. -->
+            <nav>
+                <!-- "a" is anchor tag. Use it to create links. -->
+                <a href="http://www.google.com">I am a link.</a>
+                <a href="second.html">About the Author</a>
+                <a href="emmetdemo.html">Emmet Demo</a>
+                <a href="pigbreeds.html">
+                    Pig Breeds</a>
+                <a href="formsdemo.html">Forms Demo</a>
+            </nav>
         </div>
+
+        <hr>
         <!-- A hyperlink is an example of an "inline element" -->
         <!-- Comment shortcut is COMMAND + /
-        Alt attribute will be read by screenreader.
-    -->
-
-
+        Alt attribute will be read by screenreader.(Accessibility)-->
 
         <img src="pig.jpeg" alt="Pig">
 
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Pig_farm_Vampula_9.jpg/220px-Pig_farm_Vampula_9.jpg"
             alt="">
-
 
         <span>
             <!-- A span element is another generic container like div, but span is inline.  -->
@@ -90,11 +88,12 @@
         <h2>Poem</h2>
         <h3>The Pig</h3>
         <h4>by Roald Dahl</h4>
+        <!-- PRO TIP: Use OPTION + CLICK to create multiple cursors. -->
         <p>
-            In England once there lived a big<br> <!-- Forces a new line. -->
-            A wonderfully clever pig.<br>
-            To everybody it was plain<br>
-            That Piggy had a massive brain.<br>
+            In England once there lived a <span class="rhyme">big</span><br> <!-- Forces a new line. -->
+            A wonderfully clever <span class="rhyme">pig.</span><br>
+            To everybody it was <span class="rhyme">plain<br></span>
+            That Piggy had a massive <span class="rhyme">brain.</span><br>
             He worked out sums inside his head,<br>
             There was no book he hadn't read.<br>
             He knew what made an airplane fly,<br>
@@ -105,7 +104,8 @@
             What LIFE was really all about.<br>
         </p>
 
-        <h2>Biology</h2>
+        <h2 id="bio">Biology</h2>
+        <!-- id is used here to find it in CSS. -->
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptate veniam iusto esse nulla, vel
             natus
             molestiae tempore. Sapiente corrupti obcaecati illo similique vitae aliquam quae corporis, quis dolorum
@@ -171,8 +171,7 @@
 
         </li>
 
-        <h2>References
-        </h2>
+        <h2>References</h2>
         <ol>
             <li>ol stands for ordered list</li>
             <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis voluptatum vel impedit iste neque
@@ -183,11 +182,7 @@
                 sit
                 exercitationem alias dicta fugiat dolores consectetur iste ex doloribus itaque a, omnis earum soluta
                 voluptates.</li>
-
         </ol>
-
-
-
 
     </main>
 </body>

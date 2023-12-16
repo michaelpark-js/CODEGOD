@@ -1,0 +1,14 @@
+header {
+    text-align: center;
+}
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #90C2E7;
+
+    border-width: 5px;
+    border-style: ridge;
+    border-color: #092327;
+
+}

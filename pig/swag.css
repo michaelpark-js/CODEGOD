@@ -1,0 +1,150 @@
+/* ****EVERYTHING MUST END WITH A SEMICOLON; 
+
+
+Basic Pattern: selector{
+                    property: value;
+                        }
+*/
+/* CSS Colors
+
+NAMED COLORS - There are ~140. 
+        Hotpink, Teal, Plum, MediumAquamarine, Papayawhip, Tomato, Orange, etc.
+
+RGB Colors - Additive color system.
+        Each channel ranges from 0-255. 0 means off, 255 is maxed out.
+        Syntax: rgb(255,0,0) rgb(173,420,69)
+
+Hexadecimal Colors- 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f
+        Syntax: #ffff00
+                redgreenblue
+                Also, #cc55ee = #c5e -a shortcut
+
+HSL Colors
+
+*/
+
+h1 {
+    background-color: pink;
+    text-align: center;
+    letter-spacing: 50px;
+
+    /* This is a "font stack." 
+    This provides browser with an order of fonts, 
+    first to last priority. 
+    Not all fonts may be supported by a browser. 
+    Google this. */
+    font-family: Verdana, Arial, Tahoma, sans-serif;
+    text-decoration: #ab1234 wavy underline;
+}
+
+/* px is an ABSOLUTE UNIT.
+    Relative units include: EMA,
+
+*/
+h2 {
+    text-decoration: #ab1234 underline;
+}
+
+h1,
+h2 {
+    color: darkgreen;
+}
+
+
+button {
+    font-size: 30px;
+    background-color: palevioletred;
+}
+
+a {
+    background-color: pink;
+}
+
+/* Give id=""to an element in HTML and you can CSS it, 
+    within a larger {}.*/
+#bio {
+    color: black
+}
+
+/* "." is the class="" selector. */
+.rhyme {
+    color: #ab1234;
+}
+
+/* id have one element. class can have many. 
+A single element can have multiple classes but only one id.
+*/
+
+/* Descendant Selector 
+e.g.   The following selects all <a>'s that are nested inside an <li>.
+                li a {color: teal;}
+e.g. #poo a{:;}
+
+Adjacent Selector
+    h1 + p {color: red;}
+    Select only paragraphs that are immediate preceded by an <h1>.
+    They must be next to each other.
+
+Direct Child Selector
+    div > li {color:white;}
+    Select only the <li>'s that are direct children of a <div> element.
+        i.e. one level down
+
+
+ Attribute Selector       
+ input[type=""] {color: red;}
+
+*/
+a:hover {
+    background-color: blueviolet;
+    color: white
+}
+
+h2::first-letter {
+    font-size: xx-large;
+}
+
+p::selection {
+    background-color: lightpink;
+}
+
+/* 
+ Pseudo Classes :
+    Keyword added to a selector that specifies a special state of the selected element.
+    If i want to select a checkbox that is ticked, every nth button,etc.                               
+e.g. Only when you hover a link, a:hover CSS code will be effective. 
+
+Pseudo Elements ::
+    Keyword added to a selector that lets you style a particular part of selected elements.
+        e.g. ::after, ::before, ::first-letter, ::first-line, ::selection, etc.
+    */
+
+
+/*THE CASCADE IN CSS
+    The order your styles are declared in and linked to matters.
+            h1{
+                color: red;
+            }
+            h1{
+                color: purple;
+            }
+                Purple wins!!! Top to bottom!
+
+
+
+SPECIFICITY RULE - In case of conflicts
+            More specific selectors win win.
+              ID>CLASS>ELEMENT
+
+              BTW  inline styles are the MOST specific. <style="">
+              Can use IMPORTANT DECLARATATION: !important 
+                    To prioritize a style, also not recommended.
+INHERITANCE OF CSS STYLES
+    */
+
+
+#homepage {
+    font-size: 3em;
+    background-color: black;
+    color: whitesmoke;
+}
