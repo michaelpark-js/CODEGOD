@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <!-- The form element represents a document section containing interactive controls for submitting information. -->
+    <!-- The form element is a shell, with no visual impact. -->
+
+    <form action="/pig">
+        <!-- The action attribute specifies WHERE the form data should be sent. -->
+        <!-- The method attribute specifies which HTTP method should be used -->
+        <input type="text" placeholder="Username">
+        <!-- The input element is used to create a variety of different form controls. -->
+        <!-- 20+ possible types of inputs, ranging from date pickers to checkboxes. -->
+        <!-- The type attribute dramatically alters the input's type and appearance. -->
+        <input type="password" placeholder="Password">
+
+        <input type="color">
+        <input type="month">
+        <input type="number" placeholder="Enter a Number">
+    </form>
+    <!-- The label is not only visually associated with its corresponding text input; it is programmatically associated with it too.-->
+
+    <form>
+        <div>
+            <h2>Do you like pigs?</h2>
+            <label for="yes">Yes</label>
+            <input type="checkbox" id="yes">
+            <!-- Associate label/input with for/id. Must be unique.-->
+            <label for="no">No</label>
+            <input type="checkbox" id="no">
+
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
