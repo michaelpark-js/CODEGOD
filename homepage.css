@@ -8,36 +8,48 @@ header {
 }
 
 * {
-    background-color: #33658A;
+
     color: #F6AE2D;
     margin: 0px;
-
+    background-color: #33658A;
 }
 
 body {
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
     background-image: url("homepage.jpg");
-    background-size: contain;
+    background-size: 90% auto;
     background-repeat: no-repeat;
     background-origin: border-box;
-    background-position: center;
+
+    min-height: 1000px;
+    position: center;
 
     border-width: 1px;
     border-style: solid;
     border-color: #F26419;
+
+    background-position: center;
+
+
+
+
 
 }
 
 h1 {
     font-family: 'Mukta';
     text-align: left;
-    padding-left: 0.3em;
+    padding: 0.3em;
     border-bottom: 1px solid #FF6B6B;
     border-width: 30%;
     font-size: 40px;
 }
 
-p {
-    padding: 5px;
+
+#intro {
+    text-align: center;
 }
 
 #day1 {
